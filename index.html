@@ -9,13 +9,14 @@
   <body>
     <div class="container">
       <nav class="navbar">
-        <div class="logo">SBC</div>
+        <div class="logo"><a href="#">SBC</a></div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
       </nav>
       <section class="hero">
         <div class="hero-left">
@@ -26,14 +27,14 @@
         <img src="profile.jpg" alt="Profile Photo" class="profile-img">
       </div>
       </section>
-      <section id="about">
+      <section id="about" class="reveal">
         <h2>About Me</h2>
         <p>
           Hello! My name is Swayam Chondigra. I am currently learning Full Stack
           Development. I love coding and building websites.
         </p>
       </section>
-      <section id="skills">
+      <section id="skills" class="reveal">
       <h2>Skills</h2>
       <div class="skills-container">
       <ul>
@@ -47,7 +48,7 @@
       </ul>
       </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="reveal">
     <h2>Projects</h2>
 
     <div class="project-grid">
@@ -169,7 +170,7 @@
 
     </div>
 </section>
-      <section class="contact" id="contact">
+      <section class="reveal" id="contact">
       <h2>Contact Me</h2>
       <ul>
         <li><a href="mailto:sbc251206@gmail.com">Email Me</a></li>
@@ -181,5 +182,6 @@
       </ul>
     </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
