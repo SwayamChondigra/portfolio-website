@@ -1,187 +1,243 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <nav class="navbar">
-        <div class="logo"><a href="#">SBC</a></div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle" class="theme-btn">🌙</button>
-      </nav>
-      <section class="hero">
-        <div class="hero-left">
-      <h1>Swayam Chondigra</h1>
-      <p>Aspiring Full Stack Developer</p>
-      </div>
-      <div class="hero-right">
-        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-      </div>
-      </section>
-      <section id="about" class="reveal">
-        <h2>About Me</h2>
-        <p>
-          Hello! My name is Swayam Chondigra. I am currently learning Full Stack
-          Development. I love coding and building websites.
-        </p>
-      </section>
-      <section id="skills" class="reveal">
-      <h2>Skills</h2>
-      <div class="skills-container">
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>C</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>MongoDB</li>
-      </ul>
-      </div>
+        <nav class="navbar">
+            <div class="logo"><a href="#">SBC</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </nav>
+        <section class="hero">
+            <div class="hero-left">
+                <h1>Swayam Chondigra</h1>
+                <h2>B.Tech CSE student | Aspiring Full Stack Developer</h2>
+                <p>Passionate Computer Science student focused on learning full stack
+                    development and building real-world projects using JavaScript, Python,
+                    and backend technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View my Projects</a>
+                    <a href="resume.pdf" class="btn secondary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+            </div>
+        </section>
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <p>
+                I am a third-year B.Tech Computer Science student at Parul University.
+                I am currently learning Full stack development and data structures.
+                I enjoy solving problems, building projects, and continuously improving
+                my programming skills.
+            </p>
+        </section>
+        <section id="skills" class="reveal">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>React</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Backend</h4>
+                    <div class="skill-tags">
+                        <p>Node.js</p>
+                        <p>Express.js</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Programming</h4>
+                    <div class="skill-tags">
+                        <p>Python</p>
+                        <p>C</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Database</h4>
+                    <div class="skill-tags">
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reveal">
+            <h2>Currently Learning</h2>
+            <ul>
+                <li>Advanced JavaScript</li>
+                <li>React.js</li>
+                <li>Backend Development with Node.js</li>
+                <li>Data Structures and Algorithms</li>
+            </ul>
         </section>
         <section id="projects" class="reveal">
-    <h2>Projects</h2>
+            <h2>Projects</h2>
 
-    <div class="project-grid">
+            <div class="project-grid">
 
-        <!-- Gesture Control System -->
-        <div class="project">
-            <h3>Gesture Control System</h3>
+                <!-- Gesture Control System -->
+                <div class="project">
+                    <h3>Gesture Control System</h3>
 
-            <p>
-                Built a real-time hand gesture recognition system using 
-                MediaPipe and OpenCV. Implemented hand landmark detection 
-                and mapped finger gestures to system-level controls using PyAutoGUI.
-            </p>
+                    <p>
+                        Built a real-time hand gesture recognition system using
+                        MediaPipe and OpenCV. Implemented hand landmark detection
+                        and mapped finger gestures to system-level controls using PyAutoGUI.
+                    </p>
 
-            <p class="tech-stack">
-                Tech: Python, OpenCV, MediaPipe, NumPy, PyAutoGUI
-            </p>
+                    <p class="tech-stack">
+                        Tech: Python, OpenCV, MediaPipe, NumPy, PyAutoGUI
+                    </p>
 
-            <div class="project-links">
-                <a href="https://github.com/SwayamChondigra/gesture-control-system" 
-                   target="_blank" 
-                   class="btn">
-                   GitHub
-                </a>
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/gesture-control-system" target="_blank" class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jarvis Voice Assistant -->
+                <div class="project">
+                    <h3>Jarvis Voice Assistant</h3>
+
+                    <p>
+                        Designed and implemented a voice-controlled virtual assistant using Python, integrating speech
+                        recognition and text-to-speech functionality.
+                    </p>
+
+                    <p class="tech-stack">
+                        Tech: Python, speech_recognition, pyttsx3, OS module
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/jarvis-voice-assistant" target="_blank" class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Skill Gap Analyzer -->
+                <div class="project">
+                    <h3>Skill Gap Analyzer</h3>
+
+                    <p>
+                        Designed a skill gap analysis system that evaluates user skills
+                        against predefined job role requirements and identifies missing
+                        competencies to improve career alignment.
+                    </p>
+
+                    <p class="tech-stack">
+                        Tech: Python / Web Technologies
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/skill-gap-analyzer" target="_blank" class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Digital Clock -->
+                <div class="project">
+                    <h3>Digital Clock</h3>
+
+                    <p>
+                        Developed a real-time digital clock using JavaScript
+                        that dynamically updates time every second using setInterval
+                        and DOM manipulation.
+                    </p>
+
+                    <p class="tech-stack">
+                        Tech: HTML, CSS, JavaScript
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/digital-clock" target="_blank" class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>Interactive Stopwatch</h3>
+
+                    <p>
+                        Built an interactive stopwatch using vanilla JavaScript with precise time
+                        calculation, lap functionality, and state management. Implemented dynamic DOM
+                        updates, event handling, and responsive UI design.
+                    </p>
+
+                    <p class="tech-stack">
+                        Tech: HTML, CSS, JavaScript
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/Stopwatch" target="_blank" class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Food Waste Redistribution -->
+                <div class="project">
+                    <h3>Food Waste Redistribution System</h3>
+
+                    <p>
+                        Built a platform that connects food donors with NGOs to
+                        minimize food waste. The system allows food listing,
+                        request management, and structured data handling.
+                    </p>
+
+                    <p class="tech-stack">
+                        Tech: HTML, CSS, JavaScript / Backend:Node.js,express.js
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SwayamChondigra/food-waste-redistribution" target="_blank"
+                            class="btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <!-- Jarvis Voice Assistant -->
-        <div class="project">
-            <h3>Jarvis Voice Assistant</h3>
-
-            <p>
-                Developed a voice-controlled virtual assistant using Python.
-                Integrated speech recognition and text-to-speech libraries
-                to process voice commands and execute system tasks.
-            </p>
-
-            <p class="tech-stack">
-                Tech: Python, speech_recognition, pyttsx3, OS module
-            </p>
-
-            <div class="project-links">
-                <a href="https://github.com/SwayamChondigra/jarvis-voice-assistant" 
-                   target="_blank" 
-                   class="btn">
-                   GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- Skill Gap Analyzer -->
-        <div class="project">
-            <h3>Skill Gap Analyzer</h3>
-
-            <p>
-                Designed a skill gap analysis system that evaluates user skills 
-                against predefined job role requirements and identifies missing 
-                competencies to improve career alignment.
-            </p>
-
-            <p class="tech-stack">
-                Tech: Python / Web Technologies 
-            </p>
-
-            <div class="project-links">
-                <a href="https://github.com/SwayamChondigra/skill-gap-analyzer" 
-                   target="_blank" 
-                   class="btn">
-                   GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- Digital Clock -->
-        <div class="project">
-            <h3>Digital Clock</h3>
-
-            <p>
-                Developed a real-time digital clock using JavaScript 
-                that dynamically updates time every second using setInterval 
-                and DOM manipulation.
-            </p>
-
-            <p class="tech-stack">
-                Tech: HTML, CSS, JavaScript
-            </p>
-
-            <div class="project-links">
-                <a href="https://github.com/SwayamChondigra/digital-clock" 
-                   target="_blank" 
-                   class="btn">
-                   GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- Food Waste Redistribution -->
-        <div class="project">
-            <h3>Food Waste Redistribution System</h3>
-
-            <p>
-                Built a platform that connects food donors with NGOs to 
-                minimize food waste. The system allows food listing, 
-                request management, and structured data handling.
-            </p>
-
-            <p class="tech-stack">
-                Tech: HTML, CSS, JavaScript / Backend:Node.js,express.js
-            </p>
-
-            <div class="project-links">
-                <a href="https://github.com/SwayamChondigra/food-waste-redistribution" 
-                   target="_blank" 
-                   class="btn">
-                   GitHub
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-      <section class="reveal" id="contact">
-      <h2>Contact Me</h2>
-      <ul>
-        <li><a href="mailto:sbc251206@gmail.com">Email Me</a></li>
-        <li><a href="tel:9324954974">Call Me</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/swayam-chondigra/">LinkedIn</a>
-        </li>
-        <li><a href="https://github.com/SwayamChondigra/">GitHub</a></li>
-      </ul>
+        </section>
+        <section class="reveal" id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><a href="mailto:sbc251206@gmail.com">Email Me</a></li>
+                <li><a href="tel:9324954974">Call Me</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/swayam-chondigra/">LinkedIn</a>
+                </li>
+                <li><a href="https://github.com/SwayamChondigra/">GitHub</a></li>
+            </ul>
     </div>
     </section>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
